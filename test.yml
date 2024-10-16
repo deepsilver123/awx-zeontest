@@ -1,5 +1,5 @@
 - name: Update web servers
-  hosts: webservers
+  hosts: localhost
   remote_user: root
 
   tasks:
