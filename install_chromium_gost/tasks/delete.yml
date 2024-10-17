@@ -1,4 +1,0 @@
-- name: Delete chromium-gost
-  ansible.builtin.apt_rpm:
-    pkg: chromium-gost
-    state: absent

@@ -1,5 +1,0 @@
-- name: Install chromium-gost
-  ansible.builtin.apt_rpm:
-    pkg: chromium-gost
-    state: present
-    update_cache: true
