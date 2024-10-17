@@ -1,7 +1,4 @@
 - name: Update web servers
-  hosts: localhost
-  remote_user: root
-
   tasks:
   - name: Display facts
     ansible.builtin.debug:
