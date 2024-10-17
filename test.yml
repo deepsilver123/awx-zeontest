@@ -1,5 +1,5 @@
 - name: Update web servers
-  hosts: all
+  hosts: altws10edutest
   tasks:
   - name: Display facts
     ansible.builtin.debug:
