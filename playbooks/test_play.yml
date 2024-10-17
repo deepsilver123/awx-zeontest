@@ -1,0 +1,6 @@
+- name: Get system ready for Ansible (test play)
+  gather_facts: true
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/test_role

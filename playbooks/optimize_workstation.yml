@@ -1,0 +1,6 @@
+- name: Оптимизация и настройка удаленного хоста (рабочая станция)
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  gather_facts: no
+  roles:
+    - ../roles/optimize_workstation

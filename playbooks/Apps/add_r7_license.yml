@@ -1,0 +1,6 @@
+- name: Добавление лицензии на удаленную машину
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  gather_facts: no
+  roles:
+    - /srv/Data/Ansible/roles/add_r7-office_lic

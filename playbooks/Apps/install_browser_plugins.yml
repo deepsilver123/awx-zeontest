@@ -1,0 +1,6 @@
+---
+- hosts: '{{ playbook_hosts }}'
+  gather_facts: no
+  become: true
+  roles:
+    - install_browser_plugins

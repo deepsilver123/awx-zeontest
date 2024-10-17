@@ -1,0 +1,6 @@
+- name: Настраивает хост для удаленного подключения технической поддержки
+  gather_facts: true
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/install_remoteaccess

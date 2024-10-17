@@ -1,0 +1,6 @@
+- name: Генерит пароль и настраивает хост для удаленного подключения
+  gather_facts: true
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/get_remoteaccess

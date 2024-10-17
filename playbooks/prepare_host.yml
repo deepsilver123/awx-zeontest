@@ -1,0 +1,7 @@
+- name: Prepare host for work with including to domain
+  gather_facts: false
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/system_update
+    - ../roles/add2domain

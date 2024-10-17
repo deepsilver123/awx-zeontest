@@ -1,0 +1,6 @@
+- name: Устанавливает базовый пакет программ
+  gather_facts: false
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/install_standard_soft

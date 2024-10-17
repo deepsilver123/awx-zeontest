@@ -1,0 +1,6 @@
+---
+- hosts: '{{ playbook_hosts }}'
+  become: true
+  gather_facts: no
+  roles:
+    - install_whats_miner_tool_wine_env

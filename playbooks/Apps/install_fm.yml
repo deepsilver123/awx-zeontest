@@ -1,0 +1,8 @@
+- name: Устанавливает MC, FAR, TuxCMD и другие 'коммандеры'
+  gather_facts: false
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  tasks:
+    - name: Include task
+      ansible.builtin.include_tasks:
+        file: /srv/Data/Ansible/roles/install_standard_soft/tasks/fm.yml

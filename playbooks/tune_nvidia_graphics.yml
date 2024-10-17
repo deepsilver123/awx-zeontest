@@ -1,0 +1,6 @@
+- name: Tune NVidia graphics
+  gather_facts: false
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/tune_nvidia_graphics

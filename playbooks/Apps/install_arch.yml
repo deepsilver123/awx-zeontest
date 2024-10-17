@@ -1,0 +1,8 @@
+- name: Устанавливает UnRAR, 7-zip и консольный RAR
+  gather_facts: false
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  tasks:
+    - name: Include task
+      ansible.builtin.include_tasks:
+        file: /srv/Data/Ansible/roles/install_standard_soft/tasks/arch.yml

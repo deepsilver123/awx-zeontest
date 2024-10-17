@@ -1,0 +1,7 @@
+- name: Устанавливает пакет прикладных программ
+  gather_facts: true
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/deploy_wine32
+    - ../roles/install_extended_soft

@@ -1,0 +1,6 @@
+- name: Установка и настройка WINE32
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  gather_facts: no
+  roles:
+    - /srv/Data/Ansible/roles/deploy_wine32

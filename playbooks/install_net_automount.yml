@@ -1,0 +1,6 @@
+- name: Устанавливает службу автомонтирования сетевых ресурсов
+  gather_facts: true
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/install_net_automount

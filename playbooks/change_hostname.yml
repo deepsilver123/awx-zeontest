@@ -1,0 +1,6 @@
+- name: Changing hostname of remote host
+  gather_facts: false
+  hosts: '{{ playbook_hosts }}'
+  become: true
+  roles:
+    - ../roles/change_hostname
